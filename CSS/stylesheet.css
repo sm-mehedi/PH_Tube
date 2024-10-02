@@ -1,0 +1,27 @@
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.youtube-category-button {
+    background-color: white; /* White background */
+    color: #333; /* Dark gray text */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+/* Hover effect */
+.youtube-category-button:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Focus effect */
+.youtube-category-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Blue outline for focus */
+}

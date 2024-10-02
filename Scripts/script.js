@@ -6,7 +6,16 @@ const loadData = ()=>{
 }
 
 const showData = (data)=>{
-console.log(data);
+    const categories = document.getElementById('displayCategory')
+    data.forEach((element) => {
+     const button = document.createElement("button");
+     button.classList.add("button-container", "youtube-category-button", "youtube-category-button:hover", "youtube-category-button:focus");
+     button.innerText=element.category;
+     categories.append(button);
+      
+        
+    });
+
 
 }
 loadData();

@@ -32,17 +32,29 @@ const showVideo = (data) =>{
         const card = document.createElement("div");
         card.classList.add("bg-white", "rounded-lg", "shadow-lg", "overflow-hidden", "transition-transform", "duration-300", "hover:scale-105", "m-4"); 
         card.innerHTML=`
-        <figure>
+    <figure class=" h-2/4">
+
     <img
       src="${element.thumbnail}"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
+      alt="Shoes" 
+      class="h-full w-full object-cover"
+      />
+  </figure">
+  <div class="px-0 py-5 flex gap-2">
+ <div>
+ <img class="w-10 rounded-full h-10 ml-3 mt-2 object-cover"src=${element.authors[0].profile_picture}>
+ </div>
+ <div>
+ <h2 class="font-bold text-xl ml-2">${element.title} </h2>
+ <div class="flex gap-2 ml-2">
+
+ <h3>
+ ${element.authors[0].profile_name}
+ </h3>
+ <img class="w-5 object-cover" src="https://img.icons8.com/?size=48&id=p9jKUHLk5ejE&format=png">
+ </div>
+ </div>
+     
   </div>
         
         `
